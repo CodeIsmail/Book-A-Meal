@@ -25,7 +25,7 @@ body{
 }
 .home{
     color: #000;
-    background: url(./images/background.jpeg);
+    background: url(../img/background.jpeg);
     position: relative;
     top:-30px;
     height: 100vh;
