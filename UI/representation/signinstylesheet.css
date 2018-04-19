@@ -43,7 +43,7 @@ body{
 }
 
 .sign-in{
-    background: url("./images/signin background.jpeg");
+    background: url("../img/signin background.jpeg");
     width: 100%;
     height: 100vh;
     position: absolute;
