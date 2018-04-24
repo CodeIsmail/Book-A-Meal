@@ -1,0 +1,33 @@
+{
+  "name": "book-a-meal",
+  "version": "1.0.0",
+  "description": "Book-A-Meal app backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeIsmail/Book-A-Meal.git"
+  },
+  "author": "Ismail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeIsmail/Book-A-Meal/issues"
+  },
+  "homepage": "https://github.com/CodeIsmail/Book-A-Meal#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "mocha": "^5.1.1"
+  }
+}
