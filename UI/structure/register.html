@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../representation/signupstylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="sign-up">
+
+        <div class="signup-card">
+
+            <form class="signup-form">
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Name</label>
+                    <input class="form-field" id="email" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-field" id="email" />
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label class="form-label" id="password-label" for="password">Password</label>
+                        <img id="password-img" src="../img/noseepassword.png" />
+                    </div>
+                    <input class="form-field" id="password" />
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label class="form-label" id="password-label" for="password">Confirm Password</label>
+                        <img id="password-img" src="../img/noseepassword.png" />
+                    </div>
+                    <input class="form-field" id="password" />
+                </div>
+                <div class="form-group" id="user-type-group">
+                    <input class="radio-btn" type="radio" name="user-type" value="Caterer" checked> Caterer
+                    <input class="radio-btn"type="radio" name="user-type" value="Customer"> Customer
+                </div>
+                <a id="submit-btn" href="../structure/dashboard.html">Create Account</a>
+            </form>
+
+            <div class="sign-in-container">
+                <div class="sign-in-link">
+                    <a href="../structure/signin.html">Sing In</a>
+                    instead?
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
