@@ -41,7 +41,7 @@ class MealsController {
   static deleteMeal(req, res) {
     const index = mealsModel.findIndex(obj => obj.mealId === parseInt(req.params.id, 10));
     if (index === -1) {
-      return res.status(404).send(`${req.params.id} not found`);
+      return res.status(404).json({ status: 'error', message: 'Meal not found' });
     }
     const mealObj = mealsModel.splice(index, 1);
     return res.status(200).send(`${mealObj[0].title} was deleted`);
@@ -56,7 +56,7 @@ class MealsController {
     } = req.body;
     const index = mealsModel.findIndex(obj => obj.mealId === parseInt(req.params.id, 10));
     if (index === -1) {
-      return res.status(404).send(`${req.params.id} not found`);
+      return res.status(404).json({ status: 'error', message: 'Meal not found' });
     }
 
     mealsModel[index].title = title || mealsModel[index].title;
@@ -65,7 +65,7 @@ class MealsController {
     mealsModel[index].img = img || mealsModel[index].img;
 
     return res.status(200).json({
-      status: 'Meal has been updated',
+      status: 'success: meal has been updated',
       meal: mealsModel[index],
     });
   }
