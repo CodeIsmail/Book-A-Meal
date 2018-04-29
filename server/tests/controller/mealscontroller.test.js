@@ -43,8 +43,9 @@ describe('POST meal', () => {
     response.statusCode.should.equal(201);
   });
 });
+
 describe('DELETE meal', () => {
-  it('should return 200', () => {
+  it('should return 200 on success', () => {
     const request = httpMock.createRequest({
       method: 'DELETE',
       url: '/meals/1',
@@ -53,17 +54,14 @@ describe('DELETE meal', () => {
       },
     });
 
-    // console.log(request.originalUrl);
     const response = httpMock.createResponse();
 
     MealController.deleteMeal(request, response);
-    // console.log(response.statusCode);
-    /* eslint no-underscore-dangle: ["error", { "allow": ["_isJSON"] }] */
-    // response._isJSON();
+
     response.statusCode.should.equal(200);
   });
 
-  it('should return 404', () => {
+  it('should return 404 on failure', () => {
     const request = httpMock.createRequest({
       method: 'DELETE',
       url: '/meals/400',
@@ -71,14 +69,55 @@ describe('DELETE meal', () => {
         id: 400,
       },
     });
+    const response = httpMock.createResponse();
+    MealController.deleteMeal(request, response);
 
-    // console.log(request.originalUrl);
+    response.statusCode.should.equal(404);
+  });
+});
+
+describe('Update meal', () => {
+  it('should return 200 on success', () => {
+    const request = httpMock.createRequest({
+      method: 'PUT',
+      url: '/meals/3',
+      body: {
+        title: 'Rice and Dodo',
+        desc: 'Made in nigeria',
+        price: 700.00,
+        img: 'img.com/img1.jpg',
+      },
+      params: {
+        id: 3,
+      },
+    });
+
     const response = httpMock.createResponse();
 
-    MealController.deleteMeal(request, response);
-    // console.log(response.statusCode);
-    /* eslint no-underscore-dangle: ["error", { "allow": ["_isJSON"] }] */
-    // response._isJSON();
+    MealController.updateMeal(request, response);
+
+    response.statusCode.should.equal(200);
+  });
+
+  it('should return 404 on failure', () => {
+    const request = httpMock.createRequest({
+      method: 'PUT',
+      url: '/meals/24',
+      body: {
+        title: 'Rice and Dodo',
+        desc: 'Made in nigeria',
+        price: 700.00,
+        img: 'img.com/img1.jpg',
+      },
+      params: {
+        id: 24,
+      },
+    });
+
+    const response = httpMock.createResponse();
+
+    MealController.updateMeal(request, response);
+
     response.statusCode.should.equal(404);
   });
 });
