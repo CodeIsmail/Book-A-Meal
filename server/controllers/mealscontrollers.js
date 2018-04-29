@@ -46,6 +46,29 @@ class MealsController {
     const mealObj = mealsModel.splice(index, 1);
     return res.status(200).send(`${mealObj[0].title} was deleted`);
   }
+
+  static updateMeal(req, res) {
+    const {
+      title,
+      desc,
+      price,
+      img,
+    } = req.body;
+    const index = mealsModel.findIndex(obj => obj.mealId === parseInt(req.params.id, 10));
+    if (index === -1) {
+      return res.status(404).send(`${req.params.id} not found`);
+    }
+
+    mealsModel[index].title = title || mealsModel[index].title;
+    mealsModel[index].desc = desc || mealsModel[index].desc;
+    mealsModel[index].price = price || mealsModel[index].price;
+    mealsModel[index].img = img || mealsModel[index].img;
+
+    return res.status(200).json({
+      status: 'Meal has been updated',
+      meal: mealsModel[index],
+    });
+  }
 }
 
 module.exports = MealsController;
