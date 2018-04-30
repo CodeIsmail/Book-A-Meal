@@ -6,9 +6,9 @@ body{
     background: rgb(255, 255, 255);
     width: 34%;
     height: 79%;
-    top: 85px;
     position: relative;    
-    margin: auto;
+    margin: auto 80px auto auto;
+    
     
 }
 
@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-top: 80px
+    padding-top: 20%
 }
 
 .form-group{
@@ -48,15 +48,14 @@ body{
 }
 
 .sign-up{
-    background: url("../img/smoothie.jpeg");    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/smoothie.jpeg");
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    box-sizing: border-box;
 }
 
 .sign-in-header{
@@ -98,4 +97,16 @@ a{
     text-decoration: none;
     width: 75%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    .signup-card{
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+    }
+
+    
+    
 }

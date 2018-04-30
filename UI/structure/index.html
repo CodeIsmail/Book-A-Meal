@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../representation/indexstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/indexstylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
     <title>Book-A-Meal</title>
 
@@ -38,6 +38,9 @@
                             </div>
                         </a>
                     </li>
+                    <a href="javascript:void(0);" class="icon">
+                        <img src="../img/menu.png" alt="icon">
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -45,9 +48,9 @@
         <section class="home">
             <div class="home-content-container">
                 <div class="food-qoute-container">
-                    <p>ONE cannot think well, Love well,
+                    <h1>ONE cannot think well, Love well,
                         <br> if ONE has not dined well.
-                    </p>
+                    </h1>
                 </div>
                 <div id="brand-btn">
                     <a href="./menu.html">
@@ -57,52 +60,49 @@
             </div>
         </section>
         <section class="special">
-            <div>
-                <h1>TODAY'S SPECIALS</h1>
-            </div>
-            <div id="card-container">
-                <div class="card">
-                    <img src="../img/meal-one.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <p>meal-one</p>
-                    </div>
-                    <div class="price">
-                        <p>&#8358;1,500.00</p>
-                    </div>
-                    <div class="card-btn-group">
-                        <a class="card-btn" href="../structure/index.html">ORDER NOW</a>
-                        <a class="card-btn" href="../structure/index.html">ADD TO CART</a>
-                    </div>
+            <div class="special-content-conatiner">
+                <div class="special-content-header">
+                    <h1>SPECIALS</h1>
                 </div>
-
-                <div class="card">
-                    <img src="../img/meal-two.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <p>meal-two</p>
-                    </div>
-                    <div class="price">
-                        <p>&#8358;1,500.00</p>
-                    </div>
-                    <div class="card-btn-group">
-                        <a class="card-btn" href="../structure/index.html">ORDER NOW</a>
-                        <a class="card-btn" href="../structure/index.html">ADD TO CART</a>
-                    </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img class="menu-card-img" src="../img/chips.jpeg" alt="Avatar">
+                        <a class="meal-overlay">
+                            <div class="container">
+                                <h4 class="meal-name">Meal-One</h4>
+                                <p class="meal-desc">Reprehenderit dolore labore excepteur ut dolor.</p>
+                                <span class="meal-price">&#8358;1,500.00</span>
+                            </div>
+                        </a>
+                    <a class="card-btn" href="../html/index.html">
+                    <div>+</div></a>
+    
                 </div>
-
+    
                 <div class="card">
-                    <img src="../img/meal-three.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <p>meal-three</p>
-                    </div>
-                    <div class="price">
-                        <p>&#8358;1,500.00</p>
-                    </div>
-                    <div class="card-btn-group">
-                        <a class="card-btn" href="../structure/index.html">ORDER NOW</a>
-                        <a class="card-btn" href="../structure/index.html">ADD TO CART</a>
-                    </div>
+                    <img class="menu-card-img" src="../img/chips.jpeg" alt="Avatar">
+                    <a class="meal-overlay">
+                        <div class="container">
+                            <h4 class="meal-name">Meal-Two</h4>
+                            <p class="meal-desc">Reprehenderit dolore labore excepteur ut dolor.</p>
+                            <span class="meal-price">&#8358;1,500.00</span>
+                        </div>
+                    </a>
+                    <a class="card-btn" href="../html/index.html"><div>+</div></a>
                 </div>
-            </div>
+    
+                <div class="card">
+                    <img class="menu-card-img" src="../img/chips.jpeg" alt="Avatar">
+                    <a class="meal-overlay">
+                        <div class="container">
+                            <h4 class="meal-name">Meal-Three</h4>
+                            <p class="meal-desc">Reprehenderit dolore labore excepteur ut dolor.</p>
+                            <span class="meal-price">&#8358;1,500.00</span>
+                        </div>
+                    </a>
+                    <a class="card-btn" href="../html/index.html"><div>+</div></a>
+                </div>
+            </div>            
         </section>
     </div>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../representation/signinstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/signinstylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
     <title>Sign In</title>
 </head>
@@ -13,30 +13,27 @@
 
         <div class="signin-card">
 
-            <div>
-
                 <form class="signin-form">
-                    <div class="form-group">
-                        <label class="form-label" for="email">Username/Email</label>
-                        <input class="form-field" id="email" />
-                    </div>
-                    <div class="form-group">
-                        <div>
-                            <label class="form-label" id="password-label" for="password">Password</label>
-                            <img id="password-img" src="../img/noseepassword.png" />
+                        <div class="form-group">
+                            <label class="form-label" for="email">Username/Email</label>
+                            <input class="form-field" id="email" />
                         </div>
-                        <input class="form-field" id="password" />
+                        <div class="form-group">
+                            <div>
+                                <label class="form-label" id="password-label" for="password">Password</label>
+                                <img id="password-img" src="../img/noseepassword.png" />
+                            </div>
+                            <input class="form-field" id="password" />
+                        </div>
+                        <a id="submit-btn" href="../html/dashboard.html">Sign In</a>
+                    </form>
+    
+                    <div class="sign-up-container">
+                        <div class="sign-up-link">
+                            <a href="../html/register.html">Create Account</a>
+                            instead?
+                        </div>
                     </div>
-                    <a id="submit-btn" href="../structure/dashboard.html">Sign In</a>
-                </form>
-
-                <div class="sign-up-container">
-                    <div class="sign-up-link">
-                        <a href="../structure/register.html">Create Account</a>
-                        instead?
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </body>
