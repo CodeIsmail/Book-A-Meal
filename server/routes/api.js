@@ -1,8 +1,8 @@
 import express from 'express';
-import mealsRoutesApi from './api/v1';
+import routesApi from './api/v1';
 
 const router = express.Router();
 
-router.use('/api', mealsRoutesApi);
+router.use('/api', routesApi);
 
 module.exports = router;
