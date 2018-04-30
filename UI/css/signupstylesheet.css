@@ -2,32 +2,37 @@ body{
     margin: 0px;
 }
 
-.signin-card{
-
+.signup-card{
     background: rgb(255, 255, 255);
     width: 34%;
     height: 79%;
-    top: 85px;
     position: relative;    
     margin: auto 80px auto auto;
+    
     
 }
 
 
 
-.signin-form{
+.signup-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-top: 100px
+    padding-top: 20%
 }
 
 .form-group{
     margin-bottom: 16px;
     position: relative;
     width: 80%;
+}
+
+#user-type-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .login-form label{
     font-weight: 600;
@@ -42,16 +47,15 @@ body{
     width: 100%;
 }
 
-.sign-in{
-    background: url("../img/signin background.jpeg");
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/smoothie.jpeg");
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    box-sizing: border-box;
 }
 
 .sign-in-header{
@@ -67,7 +71,7 @@ body{
     
 }
 
-.sign-up-container{
+.sign-in-container{
     margin: 16px 35px 16px;
     float: right;
 }
@@ -83,7 +87,7 @@ a{
     color: rgba(31, 189, 17);
 }
 #submit-btn{
-    background: rgba(31, 189, 17);
+    background: #1fbd11;
     text-decoration-line: none;
     border: none;
     border-radius: .8em;
@@ -93,4 +97,16 @@ a{
     text-decoration: none;
     width: 75%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    .signup-card{
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+    }
+
+    
+    
 }
