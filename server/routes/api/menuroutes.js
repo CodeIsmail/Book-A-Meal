@@ -3,7 +3,7 @@ import menuController from '..//../controllers/menucontrollers';
 
 const menuRouter = express.Router();
 
-menuRouter.get('/', menuController.setMenu);
+menuRouter.post('/', menuController.createMenu);
 
 
 module.exports = menuRouter;
