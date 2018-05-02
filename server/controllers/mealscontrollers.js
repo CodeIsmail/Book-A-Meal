@@ -55,6 +55,7 @@ class MealsController {
       img,
     } = req.body;
     const index = mealsModel.findIndex(obj => obj.mealId === parseInt(req.params.id, 10));
+    console.log(`index ${index}`);
     if (index === -1) {
       return res.status(404).json({ status: 'error', message: 'Meal not found' });
     }
