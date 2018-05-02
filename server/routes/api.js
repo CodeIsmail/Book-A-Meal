@@ -4,7 +4,7 @@ import mealsRoutesApi from './api/index';
 const router = express.Router();
 
 router.use('/api/v1/', mealsRoutesApi);
-router.get('/v1', (req, res) => {
+router.get('/api/v1', (req, res) => {
   res.send('Welcome!');
 });
 
