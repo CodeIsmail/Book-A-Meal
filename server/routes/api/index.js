@@ -1,6 +1,6 @@
 import express from 'express';
-import mealsRoutes from '../../api/v1/mealsroutes';
-import menuRoutes from '../../api/v1/menuroutes';
+import mealsRoutes from '.././api/mealsroutes';
+import menuRoutes from '.././api/menuroutes';
 
 const router = express.Router();
 
