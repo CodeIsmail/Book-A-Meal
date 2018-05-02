@@ -22,7 +22,7 @@ const meals = [{
 {
   mealId: 4,
   title: 'Omalet and Dodo',
-  desc: 'Eggs, Plantain, Pepper, Spring Onion ',
+  desc: 'Eggs, Plantain, Pepper, Spring Onion',
   price: 1200,
   img: 'images.com/img4.jpeg',
 }];

@@ -14,13 +14,17 @@
         <div class="manage">
 
             <nav class="sidenav">
+                <div>
+                    <h1>Book A Meal</h1>
+                </div>
+                <hr>
                 <ul class="sidenav-items">
                     <li>
                         <a href="dashboard.html">Dashboard</a>
                     </li>
 
                     <li>
-                        <a href="#">Manage Meal Option</a>
+                        <a href="#">Add Meal Option</a>
                     </li>
 
                     <li>
@@ -37,7 +41,11 @@
         <div class="main-content">
 
             <div class="header">
-                <div></div>
+                <ul class="menu">
+                    <li class="menu-button">
+                        <img src="../img/menu.png" alt="menu">
+                    </li>
+                </ul>
                 <ul class="admin-menu">
                     <li class="admin-menu-list">
                         <a class="nofication">
@@ -55,168 +63,205 @@
 
                 </ul>
             </div>
-            <div class="summary-contents">
-                <div class="meal-menu-container">
+            <div>
+                <div class="summary-contents">
+                    <div class="meal-menu-container">
 
-                    <div class="meal-opt-summary">
-                        <table>
-                            <tr>
-                                <div class="table-header">Meal Option</div>
-                            </tr>
-                            <tr>
-                                <th>#</th>
-                                <th>Meal</th>
-                                <th>Price (&#8358;)</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                                <td>
-                                    <div class="meal-manage-container">
-                                        <div>
-                                            <img src="../img/edit.png">
-                                        </div>
-                                        <div>
-                                            <img src="../img/delete.png">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                                <td>
-                                    <div class="meal-manage-container">
-                                        <div>
-                                            <img src="../img/edit.png">
-                                        </div>
-                                        <div>
-                                            <img src="../img/delete.png">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        <div class="meal-opt-summary">
+                            <table>
+                                <tr>
+                                    <div class="table-header">Meal Option</div>
+                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Meal</th>
+                                        <th>Decription</th>
+                                        <th>Price (&#8358;)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            Chicken Sandwich
+                                        </td>
+                                        <td>Chicken, Vegetables, Potato, Bread, Lettuce</td>
+                                        <td>1,500.00</td>
+                                        <td>
+                                            <div class="meal-manage-container">
+                                                <div>
+                                                    <img src="../img/edit.png">
+                                                </div>
+                                                <div>
+                                                    <img src="../img/delete.png">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            Terrkulture Onion and Fish in basket
+                                        </td>
+                                        <td>Croaker Fish, Onion, Potato</td>
+                                        <td>1,200.00</td>
+                                        <td>
+                                            <div class="meal-manage-container">
+                                                <div>
+                                                    <img src="../img/edit.png">
+                                                </div>
+                                                <div>
+                                                    <img src="../img/delete.png">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                                <td>
-                                    <div class="meal-manage-container">
-                                        <div>
-                                            <img src="../img/edit.png">
-                                        </div>
-                                        <div>
-                                            <img src="../img/delete.png">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                                <td>
-                                    <div class="meal-manage-container">
-                                        <div>
-                                            <img src="../img/edit.png">
-                                        </div>
-                                        <div>
-                                            <img src="../img/delete.png">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                                <td>
-                                    <div class="meal-manage-container">
-                                        <div>
-                                            <img src="../img/edit.png">
-                                        </div>
-                                        <div>
-                                            <img src="../img/delete.png">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            Boiled Sweet Potato
+                                        </td>
+                                        <td>Yam, Snail, Pepper, Onion, Spice</td>
+                                        <td>2,000</td>
+                                        <td>
+                                            <div class="meal-manage-container">
+                                                <div>
+                                                    <img src="../img/edit.png">
+                                                </div>
+                                                <div>
+                                                    <img src="../img/delete.png">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            Omalet and Dodo
+                                        </td>
+                                        <td>Eggs, Plantain, Pepper, Spring Onion</td>
+                                        <td>1,200.00</td>
+                                        <td>
+                                            <div class="meal-manage-container">
+                                                <div>
+                                                    <img src="../img/edit.png">
+                                                </div>
+                                                <div>
+                                                    <img src="../img/delete.png">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            Fried Rice and Dodo
+                                        </td>
+                                        <td></td>
+                                        <td>700</td>
+                                        <td>
+                                            <div class="meal-manage-container">
+                                                <div>
+                                                    <img src="../img/edit.png">
+                                                </div>
+                                                <div>
+                                                    <img src="../img/delete.png">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <div class="menu-summanry">
-                        <table>
-                            <tr>
-                                <div class="table-header">Menu</div>
-                            </tr>
-                            <tr>
-                                <th>#</th>
-                                <th>Meal</th>
-                                <th>Price (&#8358;)</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    Rice
-                                </td>
-                                <td>100</td>
-                            </tr>
+                        <div class="summary-card">
+                            <div class="summary">
+                                    <div id="order-img">
+                                            <img src="../img//order.png" alt="cash">
+                                        </div>
+                                <div id="order">
+                                    <div id="order-label">
+                                        <p>Orders</p>
+                                    </div>
+                                    <div id="order-number">
+                                        <p>12</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        </table>
+                            <div class="summary">
+                                <div id="naira-img">
+                                    <img src="../img//naira.png" alt="cash">
+                                </div>
+                                <div id="profit">
+                                    <div id="profit-label">
+                                        <p>Profit</p>
+                                    </div>
+                                    <div id="profit-number">
+                                        <p>12,000.00</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="summary">
+                                <div id="check-img">
+                                    <img src="../img//check.png" alt="check">
+                                </div>
+                                <div id="cleared">
+                                    <div id="cleared-label">
+                                        <p>Cleared</p>
+                                    </div>
+                                    <div id="cleared-number">
+                                        <p>06</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="summary-card">
-                    <div class="summary">
-                        <div id="order-number">
-                            <p>12</p>
-                        </div>
-                        <div id="order-label">
-                            <p>Orders</p>
-                        </div>
-                    </div>
 
-                    <div class="summary">
-                        <div id="profit-number">
-                            <p>&#8358;12,000.00</p>
-                        </div>
-                        <div id="profit-label">
-                            <p>Profit</p>
-                        </div>
-                    </div>
+                <div class="menu-summanry">
+                    <table>
+                        <tr>
+                            <div class="table-header">Menu</div>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Meal</th>
+                            <th>Price (&#8358;)</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                Rice
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                Rice
+                            </td>
+                            <td>100</td>
+                        </tr>
 
-                    <div class="summary">
-                        <div id="delivered-number">
-                            <p>6</p>
-                        </div>
-                        <div id="delivered-label">
-                            <p>Delivered</p>
-                        </div>
-                    </div>
+                    </table>
                 </div>
-
             </div>
+
+
+
+
+            <footer class="footer">
+                <span>Copyright © 2018</span>
+            </footer>
+
         </div>
     </div>
 </body>
