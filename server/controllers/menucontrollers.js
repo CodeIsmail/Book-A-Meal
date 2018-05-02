@@ -1,9 +1,12 @@
 import menuModel from '../models/menumodel';
+// import mealModel from '../models/mealsmodel';
 
 class MenuControllers {
   static createMenu(req, res) {
     const {
-      date, catererId, meals,
+      date,
+      catererId,
+      meals,
     } = req.body;
 
     if (!date || !catererId || !meals) {
@@ -12,17 +15,19 @@ class MenuControllers {
         message: 'Your request is missing parameters. Please verify and resubmit.',
       });
     }
+
+    console.log(meals);
     const menuId = menuModel.length + 1;
-    menuModel.push(
+    menuModel.push({
       menuId,
       catererId,
       meals,
       date,
-    );
+    });
 
-    return res.status(200).json({
+    return res.status(201).json({
       status: 'success',
-      data: menuModel[menuId],
+      menuModel,
     });
   }
 }
