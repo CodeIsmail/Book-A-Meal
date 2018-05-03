@@ -15,13 +15,24 @@ class MenuControllers {
         message: 'Your request is missing parameters. Please verify and resubmit.',
       });
     }
+    if (!Array.isArray(meals)) {
+      return res.status(400).json({
+        status: 'error',
+        message: 'Your meal content is empty. Please verify and resubmit.',
+      });
+    }
+
+    const mealsMapped = meals.map((obj) => {
+      const arr = mealModel[obj - 1];
+      return arr;
+    });
 
     console.log(meals);
     const menuId = menuModel.length + 1;
     menuModel.push({
       menuId,
       catererId,
-      meals,
+      mealsMapped,
       date,
     });
 
@@ -38,33 +49,6 @@ class MenuControllers {
     if (index === -1) {
       return res.status(404).json({ status: 'error', message: 'No menu for this date' });
     }
-
-    const menuObj = menuModel.map((obj) => {
-      const newMenuArray = [];
-      const newArray = obj.meals.map((mealobj) => {
-        let arr = [];
-        arr = mealModel[mealobj - 1];
-        // console.log(arr);
-        return arr;
-      });
-      obj.meals = newArray;
-      newMenuArray.push(obj);
-      return newMenuArray;
-    });
-    // const menuObj = menuModel.filter((obj) => {
-    //   const menu = obj;
-    //   menu.meals = newArray;
-    //   return menu;
-    // });
-    // console.log(menuObj);
-    // map to string
-    const mealArr = menuObj[index].meals.map((obj) => {
-      let arr = [];
-      arr = mealModel[obj - 1];
-      return arr;
-    });
-
-    menuObj[index].meals = mealArr;
     return res.status(200).json({
       status: 'success',
       data: menuModel[index],
@@ -72,4 +56,4 @@ class MenuControllers {
   }
 }
 
-module.exports = MenuControllers;
+export default MenuControllers;
