@@ -4,54 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/signupstylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
     <title>Create Account</title>
 </head>
 
 <body>
-    <div class="sign-up">
+    <div class="content-container">
 
-        <div class="signup-card">
+        <div class="sign-up">
 
-            <form class="signup-form">
+            <div class="signup-card">
+                    <form class="signup-form">
 
-                <div class="form-group">
-                    <label class="form-label" for="email">Name</label>
-                    <input class="form-field" id="email" />
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-field" id="email" />
-                </div>
-                <div class="form-group">
-                    <div>
-                        <label class="form-label" id="password-label" for="password">Password</label>
-                        <img id="password-img" src="../img/noseepassword.png" />
-                    </div>
-                    <input class="form-field" id="password" />
-                </div>
-                <div class="form-group">
-                    <div>
-                        <label class="form-label" id="password-label" for="password">Confirm Password</label>
-                        <img id="password-img" src="../img/noseepassword.png" />
-                    </div>
-                    <input class="form-field" id="password" />
-                </div>
-                <div class="form-group" id="user-type-group">
-                    <input class="radio-btn" type="radio" name="user-type" value="Caterer" checked> Caterer
-                    <input class="radio-btn"type="radio" name="user-type" value="Customer"> Customer
-                </div>
-                <a id="submit-btn" href="../html/dashboard.html">Create Account</a>
-            </form>
-
-            <div class="sign-in-container">
-                <div class="sign-in-link">
-                    <a href="../html/signin.html">Sing In</a>
-                    instead?
-                </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Name</label>
+                                <input class="form-field" id="email" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-field" type="email" id="email" />
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <label class="form-label" id="password-label" for="password">Password</label>
+                                    <img id="password-img" src="../img/noseepassword.png" />
+                                </div>
+                                <input class="form-field" type="password" id="password" />
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <label class="form-label" id="password-label" for="password">Confirm Password</label>
+                                    <img id="password-img" src="../img/noseepassword.png" />
+                                </div>
+                                <input class="form-field" type="password" id="password" />
+                            </div>
+                            <div class="form-group" id="user-type-group">
+                                <div><input class="radio-btn" type="radio" name="user-type" value="Caterer" checked> Caterer</div>
+                                <div><input class="radio-btn"type="radio" name="user-type" value="Customer"> Customer</div>
+                            </div>
+                            <a id="submit-btn" href="../html/dashboard.html">Create Account</a>
+                        </form>
+            
+                        <div class="sign-in-container">
+                            <div class="sign-in-link">
+                                <a href="../html/signin.html">Sing In</a>
+                                instead?
+                            </div>
+                        </div>
             </div>
+            
         </div>
+
+        <footer class="footer">
+                <span>Copyright © 2018</span>
+            </footer>
     </div>
+    
 </body>
 
 </html>
