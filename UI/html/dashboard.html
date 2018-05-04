@@ -65,10 +65,44 @@
             </div>
             <div class="main-summary">
                 <div class="summary-contents">
+                    <div class="add-meal-modal">
+                        <div class="add-meal-modal-content">
+                            <div>
+                                <form>
+                                    <div>
+                                        <label for="mealname">Meal
+                                        </label>
+                                        <input id="mealname">
+
+                                    </div>
+                                    <div>
+                                        <label for="recipe"> Recipe
+                                        </label>
+                                        <textarea id="recipe" rows="4" cols="25">
+
+                                        </textarea>
+                                    </div>
+
+                                    <div>
+                                        <label for="price">Price
+                                        </label>
+                                        <input id="price">
+                                    </div>
+
+                                    <div>
+                                        <label for="picupload">upload pic</label>
+                                        <input type="file" name="picupload" value="picupload" id="picupload">
+
+                                    </div>
+                                    <button id="modal-button" type="submit">SAVE</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="meal-menu-container">
 
                         <div class="meal-opt-summary">
-                            <table>                                
+                            <table>
                                 <thead>
                                     <tr>
                                         <th>S/N</th>
@@ -228,9 +262,13 @@
                         <div>
                             <h2>MENU</h2>
                             <div class="date-content">
-                                <a><img src="../img/arrowleft.png" alt="left"></a>
+                                <a>
+                                    <img src="../img/arrowleft.png" alt="left">
+                                </a>
                                 <span>05/05/2018</span>
-                                <a><img src="../img/rightarrow.png" alt="left"></a>
+                                <a>
+                                    <img src="../img/rightarrow.png" alt="left">
+                                </a>
                             </div>
                         </div>
                         <div class="menu-content">

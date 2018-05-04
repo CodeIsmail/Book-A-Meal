@@ -26,6 +26,22 @@ body {
     z-index: 1;
 }
 
+.add-meal-modal{
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 60%;
+    left: 220;
+    top: 200;
+    z-index: 400;
+    position: fixed;
+    overflow: auto;    
+    margin: auto;
+    background: cadetblue;
+}
+
 .sidenav div{
     max-height: 70px;
 }
@@ -73,10 +89,6 @@ table {
     border: 1px solid #ddd;
 }
 
-thead{
-    background: rgba(31, 189, 17)
-}
-
 tbody{
     background: white;
 }
@@ -102,6 +114,10 @@ td {
     width: 100%;
     z-index: 50;
     box-sizing: border-box;
+}
+
+.menu-button{
+    cursor: pointer;
 }
 
 .menu {
@@ -271,6 +287,11 @@ td {
     padding-bottom: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
 .summary-card {
     display: flex;
     justify-content: space-evenly;
@@ -339,6 +360,10 @@ td {
 }
 .meal-manage-container {
     display: flex;
+}
+
+.meal-manage-container div{
+    cursor: pointer;
 }
 
 .footer {
