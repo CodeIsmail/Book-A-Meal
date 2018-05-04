@@ -1,13 +1,9 @@
-/* global document */
-function openNav() {
-  document.getElementById('mySidenav').style.width = '250px';
-  document.getElementById('main').style.marginLeft = '250px';
-}
+// /* global document */
+// const openModal = () => {
+//   document.getElementById('manage-sidenav').style.width = '220px';
+//   document.getElementById('main').style.marginLeft = '250px';
+// };
 
-function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
-}
-
-openNav();
-closeNav();
+// const closeNav = () => {
+//   document.getElementsByClassName('manage').style.width = '0';
+// };

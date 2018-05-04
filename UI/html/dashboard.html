@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 
 <body>
     <div class="dashboard">
 
-        <div class="manage">
+        <div id="manage-sidenav" class="manage">
 
             <nav class="sidenav">
                 <div>
@@ -32,7 +32,7 @@
                     </li>
 
                     <li>
-                        <a href="#">Orders</a>
+                        <a href="#ordertable">Orders</a>
                     </li>
                 </ul>
             </nav>
@@ -68,31 +68,23 @@
                     <div class="add-meal-modal">
                         <div class="add-meal-modal-content">
                             <div>
-                                <form>
+                                <form class="meal-form">
                                     <div>
-                                        <label for="mealname">Meal
+                                        <label class="form-label" for="mealname">Meal
                                         </label>
                                         <input id="mealname">
-
-                                    </div>
-                                    <div>
-                                        <label for="recipe"> Recipe
+                                        <label class="form-label" for="recipe"> Recipe
                                         </label>
                                         <textarea id="recipe" rows="4" cols="25">
 
                                         </textarea>
-                                    </div>
 
-                                    <div>
-                                        <label for="price">Price
+                                        <label class="form-label" for="price">Price
                                         </label>
                                         <input id="price">
-                                    </div>
 
-                                    <div>
-                                        <label for="picupload">upload pic</label>
+                                        <label class="form-label" for="picupload">upload pic</label>
                                         <input type="file" name="picupload" value="picupload" id="picupload">
-
                                     </div>
                                     <button id="modal-button" type="submit">SAVE</button>
                                 </form>
@@ -257,7 +249,7 @@
                 </div>
 
 
-                <div class="menu-summanry">
+                <div class="menu-summary">
                     <div class="menu-summary-content">
                         <div>
                             <h2>MENU</h2>
@@ -304,6 +296,77 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="ordertable" class="order-summary">
+                        <table class="order-table">
+                            <thead>
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>OrderId</th>
+                                    <th>User</th>
+                                    <th>Meal</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Ismail</td>
+                                    <td>
+                                        Chicken Sandwich
+                                    </td>
+                                    <td>2</td>
+                                    <td>4,500.00</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Ismail</td>
+                                    <td>
+                                        Chicken Sandwich
+                                    </td>
+                                    <td>3</td>
+                                    <td>4,500.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Ismail</td>
+                                    <td>
+                                        Chicken Sandwich
+                                    </td>
+                                    <td>2</td>
+                                    <td>4,500.00</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Ismail</td>
+                                    <td>
+                                        Chicken Sandwich
+                                    </td>
+                                    <td>5</td>
+                                    <td>4,500.00</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Ismail</td>
+                                    <td>
+                                        Chicken Sandwich
+                                    </td>
+                                    <td>2</td>
+                                    <td>4,500.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
@@ -316,6 +379,7 @@
 
         </div>
     </div>
+    <script src="../js/behavior.js"></script>
 </body>
 
 </html>

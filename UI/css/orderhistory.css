@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 
-.dashboard {
+.order {
     display: flex;
     flex-direction: row;
     background: rgba(194, 194, 194, 0.2);
@@ -17,7 +17,7 @@ body {
 }
 
 .main-summary{
-    padding: 65px 0px 20px 20px;
+    padding: 65px 20px 20px 20px;
 }
 .manage {
     display: block;
@@ -29,35 +29,6 @@ body {
     z-index: 1;
 }
 
-.add-meal-modal{    
-    display: none;
-    text-align: center;
-    max-width: 400px;
-    height: 60%;
-    left: 40%;
-    top: 200;
-    z-index: 400;
-    position: fixed;  
-    margin: auto;
-    background: white;
-}
-
-.meal-recipe{
-    display: flex;
-    align-items: center;
-}
-#recipe{
-    width: 290px;
-    height: 150px;
-}
-
-.meal-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 .sidenav div{
     max-height: 70px;
 }
@@ -69,7 +40,7 @@ body {
 }
 
 .sidenav li:hover{
-    background: rgb(7, 85, 0);
+    background: rgb(161, 161, 161);
 }
 
 .sidenav hr{
@@ -85,18 +56,6 @@ body {
     transition: 0.3s;
 }
 
-.form-label{
-    text-align: left;
-    padding-right: 10px;
-}
-
-#modal-button{
-    width: 60%;
-    background: rgba(31, 189, 17); 
-    padding: .8em;
-    border-radius: 15px;
-    border: 0px;
-}
 .manage-menu {
     display: flex;
     align-items: center;
@@ -116,7 +75,6 @@ table {
     width: 100%;
     height: 100%;
     border: 1px solid #ddd;
-    overflow: auto;
 }
 
 tbody{
@@ -161,8 +119,8 @@ td {
 .card {
     display: flex;
     position: relative;
-    margin: 0px 15px 50px 15px;
-    border: 1px solid rgba(131, 131, 131, 0.377);
+    margin-bottom: 50px;
+    
 }
 
 .card-btn div{
@@ -262,10 +220,6 @@ td {
     align-items: center;
 }
 
-.admin-name {
-    color: black;
-}
-
 .admin-pic {
     background: url("../img/propic.jpg");
     object-fit: cover;
@@ -295,32 +249,20 @@ td {
 }
 
 .menu-summary {
-    display: flex;
-    width: 100%;
+    margin: 50px;
 }
 .menu-summary-content{
-    max-width: 400px;
+    max-width: 450px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;;
 }
-
-.order-summary{
-    width: calc(100% - 400px);
-    padding-left: 15px;
-}
-
-.order-table tbody{
-    overflow: auto;
-    cursor: pointer;
-}
-
 
 .menu-content{
     display: flex;
     flex-direction: column;
     height: 400px;
     align-items: center;
-    overflow-y: auto;    
+    overflow-y: auto;
 }
 
 .date-content{
