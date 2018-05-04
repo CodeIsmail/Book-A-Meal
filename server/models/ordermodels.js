@@ -2,32 +2,32 @@ import user from '../models/usermodel';
 import meal from '../models/mealsmodel';
 
 const orders = [{
-  oderId: 2,
-  user: user[1],
-  meal: meal[1],
+  oderId: 1,
+  user: user[1].name,
+  meal: meal[1].title,
   quantity: 3,
-  date: '05/05/2018',
+  amount: 3600,
+},
+{
+  oderId: 2,
+  user: user[1].name,
+  meal: meal[3].title,
+  quantity: 2,
+  amount: 3600,
 },
 {
   oderId: 3,
-  user: user[1],
-  meal: meal[3],
+  user: user[1].name,
+  meal: meal[0].title,
   quantity: 2,
-  date: '20/05/2018',
+  amount: 3600,
 },
 {
-  oderId: 2,
-  user: user[1],
-  meal: meal[4],
-  quantity: 2,
-  date: '04/06/2018',
-},
-{
-  oderId: 2,
-  user: user[1],
-  meal: meal[2],
+  oderId: 4,
+  user: user[1].name,
+  meal: meal[2].title,
   quantity: 5,
-  date: '20/05/2018',
+  amount: 3600,
 },
 ];
 

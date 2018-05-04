@@ -1,10 +1,10 @@
 import express from 'express';
-import menuController from '..//../controllers/menucontrollers';
+import orderController from '..//../controllers/ordercontroller';
 
 const menuRouter = express.Router();
 
-menuRouter.post('/', menuController.createMenu);
-menuRouter.get('/', menuController.getMenu);
+menuRouter.post('/', orderController.createOrder);
+// menuRouter.get('/', menuController.getMenu);
 
 
 module.exports = menuRouter;
